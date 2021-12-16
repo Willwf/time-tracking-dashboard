@@ -87,10 +87,21 @@ main {
   gap: 1rem;
 }
 
-#user-container div:nth-of-type(2) a {
+#user-container div:nth-of-type(2) button {
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--desaturated-blue);
+  text-align: left;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+
+  border: none;
+  background-color: var(--dark-blue);
+}
+
+#user-container div:nth-of-type(2) button:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 #time-card {
@@ -120,6 +131,10 @@ main {
   padding: 2rem;
 }
 
+.card:hover {
+  background-color: hsl(235, 43%, 31%);
+}
+
 .card-menu {
   display: flex;
   justify-content: space-between;
@@ -146,6 +161,7 @@ main {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  cursor: pointer;
 }
 
 .time-values p:nth-of-type(1) {

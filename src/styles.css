@@ -133,6 +133,7 @@ main {
 
 .card:hover {
   background-color: hsl(235, 43%, 31%);
+  cursor: pointer;
 }
 
 .card-menu {

@@ -23,7 +23,7 @@
   <body>
     <main>
       <container id="user-container">
-        <div>
+        <div class="avatar-title">
           <img
             src="../images/image-jeremy.png"
             alt="User's Avatar"
@@ -31,10 +31,27 @@
           />
           <h1>Report for <span>Jeremy Robson</span></h1>
         </div>
-        <div>
-          <button>Daily</button>
-          <button>Weekly</button>
-          <button>Monthly</button>
+        <div class="periods">
+          <div>
+            <input
+              type="radio"
+              id="daily"
+              name="period"
+              value="daily"
+              checked
+            />
+            <label for="daily">Daily</label>
+          </div>
+
+          <div>
+            <input type="radio" id="weekly" name="period" value="weekly" />
+            <label for="weekly">Weekly</label>
+          </div>
+
+          <div>
+            <input type="radio" id="monthly" name="period" value="monthly" />
+            <label for="monthly">Monthly</label>
+          </div>
         </div>
       </container>
       <container id="time-card">
@@ -131,5 +148,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="https://github.com/Willwf"> William Firmino</a>.
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>

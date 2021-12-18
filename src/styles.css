@@ -50,7 +50,7 @@ main {
   width: 16rem;
 }
 
-#user-container div:nth-of-type(1) {
+#user-container div.avatar-title {
   background-color: var(--Blue);
   border-radius: 1rem;
 
@@ -79,15 +79,23 @@ main {
   color: #fff;
 }
 
-#user-container div:nth-of-type(2) {
+#user-container div.periods {
   display: flex;
   flex-direction: column;
 
-  padding: 2rem;
-  gap: 1rem;
+  padding: 1.5rem 2rem 2rem 2rem;
+  gap: 1.25rem;
 }
 
-#user-container div:nth-of-type(2) button {
+#user-container div.periods div input {
+  appearance: none;
+}
+
+#user-container div.periods input:checked ~ label {
+  color: #fff;
+}
+
+#user-container div.periods div label {
   font-size: 1.2rem;
   text-decoration: none;
   color: var(--desaturated-blue);
@@ -99,7 +107,7 @@ main {
   background-color: var(--dark-blue);
 }
 
-#user-container div:nth-of-type(2) button:hover {
+#user-container div.periods div label:hover {
   color: #fff;
   cursor: pointer;
 }

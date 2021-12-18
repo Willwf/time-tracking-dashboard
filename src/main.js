@@ -51,7 +51,13 @@ function populateCards(period) {
         timeValues.classList.add("time-values");
 
         pValue.textContent = `${cardData.timeframes[period].current}hrs`;
-        pPrevious.textContent = `Last Week - ${cardData.timeframes[period].previous}hrs`;
+        if (period === "daily") {
+          pPrevious.textContent = `Yesterday - ${cardData.timeframes[period].previous}hrs`;
+        } else if (period === "weekly") {
+          pPrevious.textContent = `Last Week - ${cardData.timeframes[period].previous}hrs`;
+        } else {
+          pPrevious.textContent = `Last Month - ${cardData.timeframes[period].previous}hrs`;
+        }
 
         timeCard.appendChild(fullCard);
       });

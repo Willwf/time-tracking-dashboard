@@ -24,7 +24,7 @@ function populateCards(period) {
         const pPrevious = document.createElement("p");
 
         const cardTitle = cardData.title.toLowerCase().includes(" ")
-          ? cardData.title.toLowerCase().replace(" ", "-")
+          ? cardData.title.toLowerCase().replaceAll(" ", "-")
           : cardData.title.toLowerCase();
 
         fullCard.appendChild(card);

@@ -9,7 +9,7 @@ periods.addEventListener("input", (event) => {
 
 function populateCards(period) {
   timeCard.innerHTML = "";
-  fetch("../data.json")
+  fetch("./data.json")
     .then((res) => res.json())
     .then((cardsArray) => {
       cardsArray.forEach((cardData) => {
@@ -30,7 +30,7 @@ function populateCards(period) {
         fullCard.appendChild(card);
         fullCard.classList.add("full-card");
         fullCard.classList.add(cardTitle);
-        fullCard.style.backgroundImage = `url("../images/icon-${cardTitle}.svg")`;
+        fullCard.style.backgroundImage = `url("./images/icon-${cardTitle}.svg")`;
 
         card.appendChild(cardMenu);
         card.appendChild(timeValues);
@@ -43,7 +43,7 @@ function populateCards(period) {
         h1.textContent = cardData.title;
 
         button.appendChild(img);
-        img.src = `../images/icon-ellipsis.svg`;
+        img.src = `./images/icon-ellipsis.svg`;
         img.alt = `3 dot menu`;
 
         timeValues.appendChild(pValue);

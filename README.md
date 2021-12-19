@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Willwf/time-tracking-dashboard](https://github.com/Willwf/time-tracking-dashboard)
+- Live Site URL: [https://time-tracking-dashboard-liart.vercel.app/](https://time-tracking-dashboard-liart.vercel.app/)
 
 ## My process
 
